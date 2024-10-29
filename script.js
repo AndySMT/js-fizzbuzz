@@ -14,17 +14,17 @@ Abbiamo visto qualcosa di particolare che possiamo usare?
 
 "use strict";
 console.clear();
-let i;  //i = index/indice/contatore
+let i; //i = index/indice/contatore
 const nValue = 100;
 
 for (let i = 1; i <= nValue; i++) {
-    if (i % 5 === 0 && i % 3 === 0)
-        console.log("FizzBuzz");
-    else if (i % 5 === 0)
-        console.log("Buzz")
-    else if (i % 3 === 0)
-        console.log("Fizz")
-    else 
-        console.log(i + " " + "non e divisibile per nessuno dei casi precedenti");   
-} 
-    
+  if (i % 5 === 0 && i % 3 === 0) {
+    console.log(i + " " + "FizzBuzz");
+  } else if (i % 5 === 0) {
+    console.log(i + " " + "Buzz");
+  } else if (i % 3 === 0) {
+    console.log(i + " " + "Fizz");
+  } else {
+    console.log(`${i} Non e divisibile per nessuno dei casi precedenti`);
+  }
+}
